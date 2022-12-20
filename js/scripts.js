@@ -1,6 +1,6 @@
 /*
 PRIMA PARTE
-1. Creo costanti per nome, km, età e bottoni
+1. Creo costanti
 2. Creo una funzione al click sul bottone generale
 3. console.log all'interno della funzione per verificare i valori inseriti dall'utente
 4. condizionale: 
@@ -27,6 +27,8 @@ const constRandom = Math.random();
 
 submitButton.addEventListener('click',
     function(){
+
+        document.getElementById("biglietto").style.display = 'flex';
 
         console.log('Il nome del passeggero è', nameInput.value);
 
@@ -57,11 +59,28 @@ submitButton.addEventListener('click',
 
         // output
         passengerName.innerHTML = nameInput.value;
-        carrozza.innerHTML = (constRandom * 10).toFixed(0);
+        carrozza.innerHTML = (constRandom * 10 + 1).toFixed(0);
         cpCode.innerHTML = (constRandom * 100000).toFixed(0);
         price.innerHTML = '€ ' + ticketPrice.toFixed(2);
 
     }
 )
 
+deleteButton.addEventListener('click',
+
+    function(){
+
+        document.getElementById("biglietto").style.display = 'none';
+
+        nameInput.value = "";
+        kmInput.value = "";
+        ageSelection.value = "";
+
+        passengerName.innerHTML = "";
+        promotion.innerHTML = "";
+        carrozza.innerHTML = "";
+        cpCode.innerHTML = "";
+        price.innerHTML = "";
+    }
+)
 

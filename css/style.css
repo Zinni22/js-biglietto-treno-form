@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERALI */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    background-color:rgb(243, 233, 192);
+    padding: 100px 150px;
+}
+.flex{
+    display: flex;
+}
+
+/* MAIN */
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+/* Sezione input */
+.input-section{
+    background-color:rgba(255, 234, 203, 0.571);
+    padding: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px rgba(234,146,15,0.44);
+}
+.input-section > div{
+    width: calc(100%/3);
+    text-align: center;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(234, 146, 15);
+}
+input, select{
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid #ea920f;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+/* Sezione button */
+.button-section{
+    margin-top: 30px;
+    justify-content: center;
+}
+button{
+    margin: 0 10px;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ea920f;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Sezione biglietto */
+#biglietto{
+    display: none;
+    background-color:white;
+    margin:2rem 0;
+    padding: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px rgba(234,146,15,0.44);
+} 
+#biglietto div{
+    width: calc(100%/5);
+    text-align: center;
+}
+h3{
+    color: #ea920f;
+    margin-bottom: 1rem;
+}
+#passenger-name{
+    font-weight: bold;
+}
+#price{
+    font-weight: bold;
+    text-decoration: underline;
+}

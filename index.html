@@ -15,55 +15,64 @@
     <!-- Inizio MAIN -->
     <main>
 
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+
         <!-- Sezione input -->
         <section>
-            <div>
-                <label for="name-input">
-                    Nome e cognome
-                </label>
+            <div class="input-section flex">
+                <div>
+                    <label for="name-input">
+                        Nome e cognome
+                    </label>
 
-                <input id="name-input" type="text" placeholder="Nome e Cognome">
-            </div>
+                    <input id="name-input" type="text" placeholder="Nome e Cognome">
+                </div>
 
-            <div>
-                <label for="km-input">
-                    KM da percorrere
-                </label>
+                <div>
+                    <label for="km-input">
+                        KM da percorrere
+                    </label>
 
-                <input id="km-input" type="text" placeholder="km da percorrere">
-            </div>
+                    <input id="km-input" type="text" placeholder="km da percorrere">
+                </div>
 
-            <div>
-                <label for="age-selection">
-                    Fascia d'età
-                </label>
+                <div>
+                    <label for="age-selection">
+                        Fascia d'età
+                    </label>
 
-                <select id="age-selection">
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="Maggiorenne">Maggiorenne</option>
-                    <option value="Over65">Over 65</option>
-                </select>
-            </div>
-
-            <div>
-                <button id="submit-button">
-                    Genera
-                </button>
-            </div>
-
-            <div>
-                <button id="delete-button">
-                    Annulla
-                </button>
+                    <select id="age-selection">
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Over65">Over 65</option>
+                    </select>
+                </div>
             </div>
         </section>
 
+        <!-- Sezione button -->
+        <section>
+            <div class="button-section flex">
+                <div>
+                    <button id="submit-button">
+                        Genera
+                    </button>
+                </div>
+
+                <div>
+                    <button id="delete-button">
+                        Annulla
+                    </button>
+                </div>
+            </div>
+        </section>
+    
 
         <!-- Sezione genera biglietto -->
-        <div class="biglietto">
+        <div id="biglietto">
 
             <div>
-                <h2>Nome passeggero</h2>
+                <h3>Nome passeggero</h3>
                 <p id="passenger-name"></p>
             </div>
 
